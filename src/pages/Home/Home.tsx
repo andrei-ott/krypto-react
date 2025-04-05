@@ -1,8 +1,10 @@
+import analyticsFiles from 'src/assets/analytics-files.png';
 import fastCompany from 'src/assets/featured/fast-company.png';
 import forbes from 'src/assets/featured/forbes.png';
 import mit from 'src/assets/featured/mit.png';
 import techCrunch from 'src/assets/featured/tech-crunch.png';
 import heroMonitor from 'src/assets/hero-monitor.png';
+import HomeTextImageSection from 'src/components/HomeTextImageSection/HomeTextImageSection.tsx';
 import MainButton from 'src/components/MainButton/MainButton.tsx';
 import { MainButtonType } from 'src/types/enums.ts';
 
@@ -35,6 +37,19 @@ function Home() {
           <img src={mit} alt="Tech Crunch" width={74} height={40} />
           <img src={forbes} alt="Tech Crunch" width={126} height={32} />
         </div>
+      </section>
+
+      <section className="mt-26">
+        <HomeTextImageSection
+          subHeader="Analytics"
+          header="built-in analytics to track your nfts"
+          bodyText="Use our built-in analytics dashboard to pull valuable insights and monitor the value of your Krypto portfolio over time."
+          buttonLabel="view our pricing"
+          buttonStyle={MainButtonType.FILL_PURPLE}
+          textMargin="mb-14"
+        >
+          <img src={analyticsFiles} alt="analytics" width={510} height={510} className="-ms-7" />
+        </HomeTextImageSection>
       </section>
     </div>
   );
