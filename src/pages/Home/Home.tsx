@@ -1,4 +1,6 @@
+import accessNotifications from 'src/assets/access-notifications.png';
 import analyticsFiles from 'src/assets/analytics-files.png';
+import appSmartphone from 'src/assets/app-smartphone.png';
 import fastCompany from 'src/assets/featured/fast-company.png';
 import forbes from 'src/assets/featured/forbes.png';
 import mit from 'src/assets/featured/mit.png';
@@ -40,15 +42,54 @@ function Home() {
       </section>
 
       <section className="mt-26">
+        <div className="mb-8">
+          <HomeTextImageSection
+            subHeader="Analytics"
+            header={`built-in analytics\nto track your nfts`}
+            bodyText="Use our built-in analytics dashboard to pull valuable insights and monitor the value of your Krypto portfolio over time."
+            buttonLabel="view our pricing"
+            buttonStyle={MainButtonType.FILL_PURPLE}
+            textMargin="mb-14"
+          >
+            <img src={analyticsFiles} alt="analytics" width={510} height={510} className="-ms-7" />
+          </HomeTextImageSection>
+        </div>
+
+        <div className="mb-23">
+          <HomeTextImageSection
+            subHeader="get our app"
+            header="browse nfts from your smartphone"
+            bodyText="Our Krypto app is the easiest way to keep track of your assets when you’re on the go."
+            buttonLabel="Download on ios"
+            buttonStyle={MainButtonType.STROKE_GREEN}
+            textMargin="mb-11"
+            reversed={true}
+          >
+            <img
+              src={appSmartphone}
+              alt="get our app"
+              width={500}
+              height={500}
+              className="me-[18px]"
+            />
+          </HomeTextImageSection>
+        </div>
+
         <HomeTextImageSection
-          subHeader="Analytics"
-          header="built-in analytics to track your nfts"
-          bodyText="Use our built-in analytics dashboard to pull valuable insights and monitor the value of your Krypto portfolio over time."
-          buttonLabel="view our pricing"
+          subHeader="24/7 access"
+          header="sell your NFTs from anywhere at any time"
+          bodyText="With our easy-to-use platform, you can buy or sell assets from anywhere in the world, at any time."
+          buttonLabel="Get started"
           buttonStyle={MainButtonType.FILL_PURPLE}
-          textMargin="mb-14"
+          textMargin="mb-[63px]"
         >
-          <img src={analyticsFiles} alt="analytics" width={510} height={510} className="-ms-7" />
+          <img
+            src={accessNotifications}
+            alt="24/7 access"
+            width={543}
+            height={543}
+            className="-ms-[62px]"
+          />
         </HomeTextImageSection>
       </section>
     </div>
