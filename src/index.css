@@ -13,7 +13,7 @@
   background-image:
           url('./assets/bg-circles/purple-cirlce-0.svg'),
           url('./assets/bg-circles/green-circle-0.svg');
-  background-position: -208% -50%, 545% -12%;
+  background-position: calc(50% - 450px) -50%, calc(50% + 930px) -3%;
   background-repeat: no-repeat;
 
   font-synthesis: none;
@@ -25,6 +25,12 @@
   --light-purple: #8D8DDA;
   --light-green: #89D0D1;
   --light-green-1: #AAD9D9;
+}
+
+@media screen and (min-width: 1440px) {
+  :root {
+    background-image: url('./assets/bg-circles/purple-cirlce-0.svg');
+  }
 }
 
 body {
