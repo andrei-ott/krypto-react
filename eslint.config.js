@@ -42,6 +42,11 @@ export default tseslint.config(
       'unused-imports/no-unused-imports': 'error',
       'simple-import-sort/imports': 'error',
       'simple-import-sort/exports': 'error',
+      'padding-line-between-statements': [
+        'error',
+        { blankLine: 'always', prev: '*', next: '*' },
+        { blankLine: 'any', prev: 'import', next: 'import' },
+      ],
     },
   },
   eslintPluginPrettierRecommended

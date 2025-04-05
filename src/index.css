@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@import "tailwindcss";
 
 :root {
   font-family: 'Outfit', system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -12,10 +15,36 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --light-purple: #8D8DDA;
+  --light-green: #89D0D1;
 }
 
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+}
+
+h1 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 87px;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: capitalize;
+}
+
+.body-text {
+  max-width: 345px;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 27.5px;
+}
+
+.sub-header {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27.5px;
+  letter-spacing: 2px;
 }

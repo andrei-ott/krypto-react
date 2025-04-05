@@ -1,0 +1,19 @@
+button {
+  display: flex;
+  justify-content: center;
+  width: 255px;
+  padding: 24px 0;
+
+  color: white;
+
+  border-radius: 100px;
+
+  &.fill-purple {
+    background-color: var(--light-purple);
+  }
+
+  &.stroke-green {
+    background: transparent;
+    border: 1px solid var(--light-green);
+  }
+}
