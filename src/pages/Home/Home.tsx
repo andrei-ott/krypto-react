@@ -8,22 +8,22 @@ import techCrunch from 'src/assets/featured/tech-crunch.png';
 import heroMonitor from 'src/assets/hero-monitor.png';
 import HomeTextImageSection from 'src/components/HomeTextImageSection/HomeTextImageSection.tsx';
 import MainButton from 'src/components/MainButton/MainButton.tsx';
-import { MainButtonType } from 'src/types/enums.ts';
+import { MainButtonStyle } from 'src/types/enums.ts';
 
 function Home() {
   return (
-    <div className="mt-14">
-      <article className="flex justify-between items-end">
-        <section className="mb-4 me-4">
+    <main>
+      <article className="flex items-end justify-between">
+        <section className="me-4 mb-4">
           <h1>discover and collect rare NFTs</h1>
 
           <div className="body-text mt-8">
             The most secure marketplace for buying and selling unique crypto assets.
           </div>
 
-          <div className="flex gap-[15px] mt-11">
-            <MainButton style={MainButtonType.FILL_PURPLE} label="BUY NFTS" />
-            <MainButton style={MainButtonType.STROKE_GREEN} label="SELL NFTS" />
+          <div className="mt-11 flex gap-[15px]">
+            <MainButton buttonStyle={MainButtonStyle.FILL_PURPLE} label="BUY NFTS" />
+            <MainButton buttonStyle={MainButtonStyle.STROKE_GREEN} label="SELL NFTS" />
           </div>
         </section>
 
@@ -33,7 +33,7 @@ function Home() {
       <section className="mt-23">
         <div className="sub-header mb-7">Featured on</div>
 
-        <div className="flex py-3 px-16 justify-between items-center bg-(--dark-purple) rounded-[7px]">
+        <div className="flex items-center justify-between rounded-[7px] bg-(--dark-purple) px-16 py-3">
           <img src={techCrunch} alt="Tech Crunch" width={207} height={77} />
           <img src={fastCompany} alt="Tech Crunch" width={184} height={28} />
           <img src={mit} alt="Tech Crunch" width={74} height={40} />
@@ -48,7 +48,7 @@ function Home() {
             header={`built-in analytics\nto track your nfts`}
             bodyText="Use our built-in analytics dashboard to pull valuable insights and monitor the value of your Krypto portfolio over time."
             buttonLabel="view our pricing"
-            buttonStyle={MainButtonType.FILL_PURPLE}
+            buttonStyle={MainButtonStyle.FILL_PURPLE}
             textMargin="mb-14"
           >
             <img src={analyticsFiles} alt="analytics" width={510} height={510} className="-ms-7" />
@@ -61,7 +61,7 @@ function Home() {
             header="browse nfts from your smartphone"
             bodyText="Our Krypto app is the easiest way to keep track of your assets when you’re on the go."
             buttonLabel="Download on ios"
-            buttonStyle={MainButtonType.STROKE_GREEN}
+            buttonStyle={MainButtonStyle.STROKE_GREEN}
             textMargin="mb-11"
             reversed={true}
           >
@@ -70,7 +70,7 @@ function Home() {
               alt="get our app"
               width={500}
               height={500}
-              className="me-[18px]"
+              className="me-4.5"
             />
           </HomeTextImageSection>
         </div>
@@ -80,19 +80,19 @@ function Home() {
           header="sell your NFTs from anywhere at any time"
           bodyText="With our easy-to-use platform, you can buy or sell assets from anywhere in the world, at any time."
           buttonLabel="Get started"
-          buttonStyle={MainButtonType.FILL_PURPLE}
-          textMargin="mb-[63px]"
+          buttonStyle={MainButtonStyle.FILL_PURPLE}
+          textMargin="mb-15.5"
         >
           <img
             src={accessNotifications}
             alt="24/7 access"
             width={543}
             height={543}
-            className="-ms-[62px]"
+            className="-ms-15.5"
           />
         </HomeTextImageSection>
       </section>
-    </div>
+    </main>
   );
 }
 

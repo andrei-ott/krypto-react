@@ -1,21 +1,20 @@
 import './MainButton.scss';
 
-import { MainButtonType } from '../../types/enums.ts';
+import { MainButtonStyle } from 'src/types/enums.ts';
 
 interface Props {
-  style: MainButtonType;
+  buttonStyle: MainButtonStyle;
   label: string;
   onClick?: () => void;
   width?: number;
 }
 
-function MainButton({ style, label, onClick, width }: Props) {
-  const widthClass = `w-[${width ?? 255}px]`;
-
+function MainButton({ buttonStyle, label, onClick, width }: Props) {
   return (
     <button
       type="button"
-      className={`${style} sub-header ${widthClass}`}
+      className={`${buttonStyle} sub-header`}
+      style={{ width: `${width ?? 255}px` }}
       onClick={() => onClick?.()}
     >
       {label}

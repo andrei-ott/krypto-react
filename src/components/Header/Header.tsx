@@ -4,12 +4,12 @@ import { Link } from 'react-router-dom';
 
 function Header() {
   return (
-    <header>
-      <Link to="/" className="logo">
+    <header className="mb-14 flex justify-between pt-14">
+      <Link to="/" className="font-bold">
         KRYPTO
       </Link>
 
-      <nav>
+      <nav className="flex w-[524px] justify-between">
         <Link to="/" className="navbar-item">
           about
         </Link>

@@ -1,8 +1,4 @@
 header {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 57px;
-
   font-size: 20px;
 
   a {
@@ -10,15 +6,7 @@ header {
     text-decoration: none;
   }
 
-  .logo {
-    font-weight: bold;
-  }
-
   nav {
-    display: flex;
-    justify-content: space-between;
-    width: 524px;
-
     a {
       position: relative;
       display: inline-block;
