@@ -11,6 +11,11 @@ button {
     background-color: var(--light-purple);
   }
 
+  &.fill-black {
+    color: white;
+    background-color: black;
+  }
+
   &.stroke-green {
     background: transparent;
     border: 1px solid var(--light-green);

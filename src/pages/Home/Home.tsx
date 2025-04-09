@@ -123,6 +123,21 @@ function Home() {
           />
         </div>
       </section>
+
+      <section
+        className="mt-31.5 flex w-full flex-col items-center rounded-[30px] pt-9 pb-12 text-center"
+        style={{ background: 'linear-gradient(-81.227deg, #AAD9D9 0%, #5656C2 100%)' }}
+      >
+        <div className="sub-header text-black">Are you ready?</div>
+
+        <h2 className="mt-6 mb-10">
+          be a part of the
+          <br />
+          next big thing
+        </h2>
+
+        <MainButton buttonStyle={MainButtonStyle.FILL_BLACK} label="Get started" width={299} />
+      </section>
     </main>
   );
 }
