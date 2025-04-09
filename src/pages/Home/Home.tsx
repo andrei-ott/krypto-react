@@ -6,8 +6,12 @@ import forbes from 'src/assets/featured/forbes.png';
 import mit from 'src/assets/featured/mit.png';
 import techCrunch from 'src/assets/featured/tech-crunch.png';
 import heroMonitor from 'src/assets/hero-monitor.png';
+import testimonialsEvan from 'src/assets/testimonials/evan.png';
+import testimonialsJessica from 'src/assets/testimonials/jessica.png';
+import testimonialsOlivia from 'src/assets/testimonials/olivia.png';
 import HomeTextImageSection from 'src/components/HomeTextImageSection/HomeTextImageSection.tsx';
 import MainButton from 'src/components/MainButton/MainButton.tsx';
+import TestimonialCard from 'src/components/TestimonialCard/TestimonialCard.tsx';
 import { MainButtonStyle } from 'src/types/enums.ts';
 
 function Home() {
@@ -91,6 +95,33 @@ function Home() {
             className="-ms-15.5"
           />
         </HomeTextImageSection>
+      </section>
+
+      <section className="mt-15.5 text-center">
+        <div className="sub-header text-(--light-green-1)">Testimonials</div>
+        <h2 className="mt-9">
+          read what others
+          <br />
+          have to say
+        </h2>
+
+        <div className="mt-27 flex justify-between gap-[15px]">
+          <TestimonialCard
+            name="Olivia Cole"
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel. "
+            image={testimonialsOlivia}
+          />
+          <TestimonialCard
+            name="Evan White"
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel. "
+            image={testimonialsEvan}
+          />
+          <TestimonialCard
+            name="Jessica Page"
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper scelerisque mi, in malesuada felis malesuada vel. "
+            image={testimonialsJessica}
+          />
+        </div>
       </section>
     </main>
   );
