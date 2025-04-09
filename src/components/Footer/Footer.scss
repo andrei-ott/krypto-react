@@ -1,0 +1,39 @@
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.big-header {
+  font-family: 'Outfit', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.section-header {
+  padding-top: 1px;
+
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.section-body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 31px;
+}
+
+.input-container {
+  input {
+    border: 1px solid var(--light-green);
+    border-radius: 70px;
+    outline: none;
+
+    &::placeholder {
+      color: white;
+      opacity: 55%;
+    }
+  }
+}

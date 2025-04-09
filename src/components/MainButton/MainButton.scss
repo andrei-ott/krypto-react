@@ -1,7 +1,6 @@
 button {
   display: flex;
   justify-content: center;
-  padding: 24px 0;
 
   color: white;
 
@@ -12,8 +11,12 @@ button {
   }
 
   &.fill-black {
-    color: white;
     background-color: black;
+  }
+
+  &.fill-green {
+    color: black;
+    background-color: var(--light-green);
   }
 
   &.stroke-green {

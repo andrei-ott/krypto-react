@@ -25,6 +25,8 @@
   --light-purple: #8D8DDA;
   --light-green: #89D0D1;
   --light-green-1: #AAD9D9;
+
+  --gradient: linear-gradient(-81.227deg, #AAD9D9 0%, #5656C2 100%);
 }
 
 @media screen and (min-width: 1440px) {

@@ -126,7 +126,7 @@ function Home() {
 
       <section
         className="mt-31.5 flex w-full flex-col items-center rounded-[30px] pt-9 pb-12 text-center"
-        style={{ background: 'linear-gradient(-81.227deg, #AAD9D9 0%, #5656C2 100%)' }}
+        style={{ background: 'var(--gradient)' }}
       >
         <div className="sub-header text-black">Are you ready?</div>
 
