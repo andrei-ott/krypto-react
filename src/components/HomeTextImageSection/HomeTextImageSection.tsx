@@ -1,5 +1,5 @@
-import MainButton from 'src/components/MainButton/MainButton.tsx';
-import { MainButtonStyle } from 'src/types/enums.ts';
+import MainButton from '@/components/MainButton/MainButton.tsx';
+import { MainButtonStyle } from '@/types/enums.ts';
 
 interface Props {
   subHeader: string;

@@ -1,18 +1,18 @@
-import accessNotifications from 'src/assets/access-notifications.png';
-import analyticsFiles from 'src/assets/analytics-files.png';
-import appSmartphone from 'src/assets/app-smartphone.png';
-import fastCompany from 'src/assets/featured/fast-company.png';
-import forbes from 'src/assets/featured/forbes.png';
-import mit from 'src/assets/featured/mit.png';
-import techCrunch from 'src/assets/featured/tech-crunch.png';
-import heroMonitor from 'src/assets/hero-monitor.png';
-import testimonialsEvan from 'src/assets/testimonials/evan.png';
-import testimonialsJessica from 'src/assets/testimonials/jessica.png';
-import testimonialsOlivia from 'src/assets/testimonials/olivia.png';
-import HomeTextImageSection from 'src/components/HomeTextImageSection/HomeTextImageSection.tsx';
-import MainButton from 'src/components/MainButton/MainButton.tsx';
-import TestimonialCard from 'src/components/TestimonialCard/TestimonialCard.tsx';
-import { MainButtonStyle } from 'src/types/enums.ts';
+import accessNotifications from '@/assets/access-notifications.png';
+import analyticsFiles from '@/assets/analytics-files.png';
+import appSmartphone from '@/assets/app-smartphone.png';
+import fastCompany from '@/assets/featured/fast-company.png';
+import forbes from '@/assets/featured/forbes.png';
+import mit from '@/assets/featured/mit.png';
+import techCrunch from '@/assets/featured/tech-crunch.png';
+import heroMonitor from '@/assets/hero-monitor.png';
+import testimonialsEvan from '@/assets/testimonials/evan.png';
+import testimonialsJessica from '@/assets/testimonials/jessica.png';
+import testimonialsOlivia from '@/assets/testimonials/olivia.png';
+import HomeTextImageSection from '@/components/HomeTextImageSection/HomeTextImageSection.tsx';
+import MainButton from '@/components/MainButton/MainButton.tsx';
+import TestimonialCard from '@/components/TestimonialCard/TestimonialCard.tsx';
+import { MainButtonStyle } from '@/types/enums.ts';
 
 function Home() {
   return (

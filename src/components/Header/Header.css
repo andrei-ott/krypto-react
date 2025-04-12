@@ -1,0 +1,16 @@
+@reference "@/index.css";
+
+header {
+  font-size: 20px;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  nav {
+    a {
+      @apply underline-animation;
+    }
+  }
+}

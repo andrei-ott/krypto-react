@@ -1,4 +1,4 @@
-import './Header.scss';
+import './Header.css';
 
 import { Link } from 'react-router-dom';
 
@@ -10,18 +10,10 @@ function Header() {
       </Link>
 
       <nav className="flex w-[524px] justify-between">
-        <Link to="/" className="navbar-item">
-          about
-        </Link>
-        <Link to="/pricing" className="navbar-item">
-          pricing
-        </Link>
-        <Link to="/contacts" className="navbar-item">
-          contacts
-        </Link>
-        <Link to="/buy-nfts" className="navbar-item">
-          buy nfts
-        </Link>
+        <Link to="/">about</Link>
+        <Link to="/pricing">pricing</Link>
+        <Link to="/contacts">contacts</Link>
+        <Link to="/buy-nfts">buy nfts</Link>
       </nav>
     </header>
   );

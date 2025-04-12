@@ -1,6 +1,6 @@
-import './MainButton.scss';
+import './MainButton.css';
 
-import { MainButtonStyle } from 'src/types/enums.ts';
+import { MainButtonStyle } from '@/types/enums.ts';
 
 interface Props {
   buttonStyle: MainButtonStyle;
@@ -14,7 +14,7 @@ function MainButton({ buttonStyle, label, onClick, width, classes }: Props) {
   return (
     <button
       type="button"
-      className={`sub-header py-6 ${buttonStyle} ${classes?.join(' ')}`}
+      className={`sub-header cursor-pointer py-6 ${buttonStyle} ${classes?.join(' ')}`}
       style={{ width: `${width ?? 255}px` }}
       onClick={() => onClick?.()}
     >

@@ -1,8 +1,9 @@
-import './Footer.scss';
+import './Footer.css';
 
 import { Link } from 'react-router-dom';
-import MainButton from 'src/components/MainButton/MainButton.tsx';
-import { MainButtonStyle } from 'src/types/enums.ts';
+
+import MainButton from '@/components/MainButton/MainButton.tsx';
+import { MainButtonStyle } from '@/types/enums.ts';
 
 function Footer() {
   return (

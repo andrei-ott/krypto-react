@@ -1,3 +1,5 @@
+@reference "@/index.css";
+
 a {
   color: white;
   text-decoration: none;
@@ -23,6 +25,12 @@ a {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 31px;
+
+  a {
+    @apply underline-animation;
+
+    margin-bottom: 2px;
+  }
 }
 
 .input-container {

@@ -1,4 +1,4 @@
-import './TestimonialCard.scss';
+import './TestimonialCard.css';
 
 interface Props {
   name: string;
