@@ -9,11 +9,15 @@
   font-weight: 400;
 
   color: rgba(255, 255, 255);
-  background-color: #010922;
+  background-color: var(--dark-purple-1);
   background-image:
           url('./assets/bg-circles/purple-cirlce-0.svg'),
+          url('./assets/bg-circles/purple-cirlce-0.svg'),
           url('./assets/bg-circles/green-circle-0.svg');
-  background-position: calc(50% - 450px) -50%, calc(50% + 930px) -3%;
+  background-position:
+          top -720px left calc(50% - 450px),
+          bottom -850px right calc(50% - 620px),
+          top 0 right calc(50% - 930px);
   background-repeat: no-repeat;
 
   font-synthesis: none;
@@ -22,17 +26,27 @@
   -moz-osx-font-smoothing: grayscale;
 
   --dark-purple: #2A255E;
+  --dark-purple-1: #010922;
   --light-purple: #8D8DDA;
   --light-green: #89D0D1;
   --light-green-1: #AAD9D9;
 
   --gradient: linear-gradient(-81.227deg, #AAD9D9 0%, #5656C2 100%);
-}
 
-@media screen and (min-width: 1440px) {
-  :root {
+  @media screen and (min-width: 1720px) {
     background-image: url('./assets/bg-circles/purple-cirlce-0.svg');
   }
+}
+
+::-webkit-scrollbar {
+  width: 16px;
+  background: var(--dark-purple-1);
+}
+
+::-webkit-scrollbar-thumb {
+  border: 4px solid var(--dark-purple-1);
+  border-radius: 15px;
+  background: var(--light-purple);
 }
 
 body {

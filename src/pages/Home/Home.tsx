@@ -38,10 +38,18 @@ function Home() {
         <div className="sub-header mb-7">Featured on</div>
 
         <div className="flex items-center justify-between rounded-[7px] bg-(--dark-purple) px-16 py-3">
-          <img src={techCrunch} alt="Tech Crunch" width={207} height={77} />
-          <img src={fastCompany} alt="Tech Crunch" width={184} height={28} />
-          <img src={mit} alt="Tech Crunch" width={74} height={40} />
-          <img src={forbes} alt="Tech Crunch" width={126} height={32} />
+          <a href="https://techcrunch.com/" target="_blank" rel="noopener noreferrer">
+            <img src={techCrunch} alt="Tech Crunch" width={207} height={77} />
+          </a>
+          <a href="https://www.fastcompany.com" target="_blank" rel="noopener noreferrer">
+            <img src={fastCompany} alt="Fast Company" width={184} height={28} />
+          </a>
+          <a href="https://web.mit.edu/" target="_blank" rel="noopener noreferrer">
+            <img src={mit} alt="MIT" width={74} height={40} />
+          </a>
+          <a href="https://www.forbes.com/" target="_blank" rel="noopener noreferrer">
+            <img src={forbes} alt="Forbes" width={126} height={32} />
+          </a>
         </div>
       </section>
 
