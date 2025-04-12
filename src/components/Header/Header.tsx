@@ -1,6 +1,6 @@
 import './Header.css';
 
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 function Header() {
   return (
@@ -10,10 +10,18 @@ function Header() {
       </Link>
 
       <nav className="flex w-[524px] justify-between">
-        <Link to="/">about</Link>
-        <Link to="/pricing">pricing</Link>
-        <Link to="/contacts">contacts</Link>
-        <Link to="/buy-nfts">buy nfts</Link>
+        <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>
+          about
+        </NavLink>
+        <NavLink to="/pricing" className={({ isActive }) => (isActive ? 'active' : '')}>
+          pricing
+        </NavLink>
+        <NavLink to="/contacts" className={({ isActive }) => (isActive ? 'active' : '')}>
+          contacts
+        </NavLink>
+        <NavLink to="/buy-nfts" className={({ isActive }) => (isActive ? 'active' : '')}>
+          buy nfts
+        </NavLink>
       </nav>
     </header>
   );

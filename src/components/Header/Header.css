@@ -11,6 +11,12 @@ header {
   nav {
     a {
       @apply underline-animation;
+
+      &.active {
+        &::after {
+          transform: scaleX(1);
+        }
+      }
     }
   }
 }
