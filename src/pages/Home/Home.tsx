@@ -1,5 +1,3 @@
-import './Home.css';
-
 import accessNotifications from '@/assets/access-notifications.png';
 import analyticsFiles from '@/assets/analytics-files.png';
 import appSmartphone from '@/assets/app-smartphone.png';

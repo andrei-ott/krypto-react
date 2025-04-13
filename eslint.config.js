@@ -44,8 +44,8 @@ export default tseslint.config(
       'simple-import-sort/exports': 'error',
       'padding-line-between-statements': [
         'error',
-        { blankLine: 'always', prev: '*', next: '*' },
-        { blankLine: 'any', prev: 'import', next: 'import' },
+        { blankLine: 'any', prev: '*', next: '*' },
+        { blankLine: 'always', prev: '*', next: 'function' },
       ],
     },
   },

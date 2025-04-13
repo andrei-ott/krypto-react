@@ -7,21 +7,23 @@
   font-family: 'Outfit', system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color: rgba(255, 255, 255);
-  background-color: var(--dark-purple-1);
-  background-image:
-          url('./assets/bg-circles/purple-cirlce-0.svg'),
-          url('./assets/bg-circles/purple-cirlce-0.svg');
-  background-position:
-          top -720px left calc(50% - 450px),
-          bottom -850px right calc(50% - 620px);
-  background-repeat: no-repeat;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-color: var(--dark-purple-1);
+  --background-images:
+          url('@/assets/bg-circles/purple-circle-0.svg'),
+          url('@/assets/bg-circles/purple-circle-0.svg'),
+          url('@/assets/bg-circles/green-circle-0.svg');
+  background-image: var(--background-images);
+  background-position:
+          top -720px left calc(50% - 450px),
+          bottom -850px right calc(50% - 620px),
+          top 30px right calc(50% - 900px);
+  background-repeat: no-repeat;
 
   --dark-purple: #2A255E;
   --dark-purple-1: #010922;
@@ -30,6 +32,18 @@
   --light-green-1: #AAD9D9;
 
   --gradient: linear-gradient(-81.227deg, #AAD9D9 0%, #5656C2 100%);
+
+  &.not-implemented-page {
+    --background-images:
+            url('@/assets/bg-circles/purple-circle-0.svg'),
+            url('@/assets/bg-circles/purple-circle-0.svg');
+  }
+
+  @media screen and (min-width: 1720px) {
+    --background-images:
+            url('@/assets/bg-circles/purple-circle-0.svg'),
+            url('@/assets/bg-circles/purple-circle-0.svg');
+  }
 }
 
 ::-webkit-scrollbar {
