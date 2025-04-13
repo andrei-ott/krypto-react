@@ -14,12 +14,12 @@ function App() {
         <BrowserRouter>
           <Header />
 
-          <div className="flex flex-1 items-center justify-center">
+          <main className="flex flex-1 items-center justify-center">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="*" element={<NotImplemented />} />
             </Routes>
-          </div>
+          </main>
 
           <Footer />
         </BrowserRouter>

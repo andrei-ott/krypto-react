@@ -4,7 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 function Header() {
   return (
-    <header className="mb-14 flex justify-between pt-14">
+    <header className="mb-8 flex justify-between pt-11">
       <Link to="/" className="font-bold">
         KRYPTO
       </Link>

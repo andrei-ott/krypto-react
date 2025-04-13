@@ -1,0 +1,10 @@
+.home {
+  --background-image-offset: 1050px;
+
+  padding-right: var(--background-image-offset);
+  margin-right: calc(var(--background-image-offset) * -1);
+
+  background-image: url('@/assets/bg-circles/green-circle-0.svg');
+  background-position: top -90px right 0;
+  background-repeat: no-repeat;
+}

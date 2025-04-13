@@ -1,3 +1,5 @@
+import './Home.css';
+
 import accessNotifications from '@/assets/access-notifications.png';
 import analyticsFiles from '@/assets/analytics-files.png';
 import appSmartphone from '@/assets/app-smartphone.png';
@@ -16,7 +18,7 @@ import { MainButtonStyle } from '@/types/enums.ts';
 
 function Home() {
   return (
-    <main>
+    <div className="home mb-32">
       <article className="flex items-end justify-between">
         <section className="me-4 mb-4">
           <h1>discover and collect rare NFTs</h1>
@@ -34,7 +36,7 @@ function Home() {
         <img src={heroMonitor} alt="" width={552} height={586} />
       </article>
 
-      <section className="mt-23">
+      <section className="mt-18">
         <div className="sub-header mb-7">Featured on</div>
 
         <div className="flex items-center justify-between rounded-[7px] bg-(--dark-purple) px-16 py-3">
@@ -53,8 +55,8 @@ function Home() {
         </div>
       </section>
 
-      <section className="mt-26">
-        <div className="mb-8">
+      <section className="mt-20">
+        <div className="mb-4">
           <HomeTextImageSection
             subHeader="Analytics"
             header={`built-in analytics\nto track your nfts`}
@@ -67,7 +69,7 @@ function Home() {
           </HomeTextImageSection>
         </div>
 
-        <div className="mb-23">
+        <div className="mb-14">
           <HomeTextImageSection
             subHeader="get our app"
             header="browse nfts from your smartphone"
@@ -93,7 +95,7 @@ function Home() {
           bodyText="With our easy-to-use platform, you can buy or sell assets from anywhere in the world, at any time."
           buttonLabel="Get started"
           buttonStyle={MainButtonStyle.FILL_PURPLE}
-          textMargin="mb-15.5"
+          textMargin="mb-12"
         >
           <img
             src={accessNotifications}
@@ -105,7 +107,7 @@ function Home() {
         </HomeTextImageSection>
       </section>
 
-      <section className="mt-15.5 text-center">
+      <section className="mt-14 text-center">
         <div className="sub-header text-(--light-green-1)">Testimonials</div>
         <h2 className="mt-9">
           read what others
@@ -133,7 +135,7 @@ function Home() {
       </section>
 
       <section
-        className="mt-31.5 flex w-full flex-col items-center rounded-[30px] pt-9 pb-12 text-center"
+        className="mt-25 flex w-full flex-col items-center rounded-[30px] pt-9 pb-12 text-center"
         style={{ background: 'var(--gradient)' }}
       >
         <div className="sub-header text-black">Are you ready?</div>
@@ -146,7 +148,7 @@ function Home() {
 
         <MainButton buttonStyle={MainButtonStyle.FILL_BLACK} label="Get started" width={299} />
       </section>
-    </main>
+    </div>
   );
 }
 

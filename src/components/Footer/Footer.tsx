@@ -7,8 +7,8 @@ import { MainButtonStyle } from '@/types/enums.ts';
 
 function Footer() {
   return (
-    <footer className="mt-28">
-      <div className="flex gap-[15px] pb-12.5">
+    <footer>
+      <div className="flex gap-[15px] pb-13">
         <div className="min-w-[165px]">
           <Link to="/" className="big-header">
             KRYPTO
